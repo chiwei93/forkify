@@ -1,3 +1,5 @@
+import 'regenerator-runtime/runtime';
+import 'core-js/stable';
 //importing all the export in model.js
 import * as model from './model.js';
 
@@ -13,9 +15,6 @@ import addRecipeView from './views/addRecipeView.js';
 import { MODAL_CLOSE_SEC } from './config.js';
 
 //for polyfilling everything else
-import 'core-js/stable';
-//for polyfilling async/await function
-import 'regenerator-runtime/runtime';
 
 //so parcel will not reload the whole page each time we update the code
 // if (module.hot) {
